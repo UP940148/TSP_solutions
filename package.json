@@ -1,0 +1,30 @@
+{
+  "name": "tsp_solutions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UP940148/TSP_solutions.git"
+  },
+  "author": "Daniel John Ellis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UP940148/TSP_solutions/issues"
+  },
+  "homepage": "https://github.com/UP940148/TSP_solutions#readme",
+  "devDependencies": {
+    "eslint": "^8.16.0",
+    "eslint-config-portsoc": "^1.0.0"
+  },
+  "eslintConfig": {
+    "extends": "portsoc",
+    "root": true,
+    "env": {
+      "browser": true
+    }
+  }
+}
