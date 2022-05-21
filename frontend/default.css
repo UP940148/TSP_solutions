@@ -1,0 +1,37 @@
+body {
+  display: flex;
+}
+#tasks {
+  flex-grow: 1;
+}
+
+details {
+  padding-left: 2rem;
+}
+summary:hover {
+  cursor: pointer;
+}
+summary {
+  width: 6.5rem;
+}
+details > details {
+  border-left: 1px solid black;
+  padding-left: 1rem;
+  margin-left: 0.4rem;
+}
+
+#graphScores {
+  padding-top: 1vh;
+  height: 80vh;
+  width: 40vw;
+  overflow-y: auto;
+  background-color: #e8e8e8;
+  font-size: 125%;
+}
+
+.attempt-container {
+  margin-left: 0.4rem;
+  border-left: 1px solid black;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+  <title>Path-finding Algorithms</title>
+  <link rel=stylesheet href=default.css>
+</head>
+
+<body>
+  <div>
+    <h2>Get improvement % for all <i>n</i> sized graphs, over <i>x</i> iterations per graph</h2>
+    <p style="margin-top: 0;">(Where <i>n</i> ranges from 4-100, inclusive)</p><br>
+    <label>Iteration count (<i>x</i>):</label>
+    <input type=number id=iters value=100></input><br><br>
+    <fieldset id=algFieldset>
+      <legend>Chosen algorithms:</legend>
+      <div id="alg1">
+        <input type="radio" id="mfAlg" value="mfAlg" name="alg1" checked></input>
+        <label for="mfAlg">Multiple-Fragment</label>
+        <br>
+        <input type="radio" id="nnAlg" value="nnAlg" name="alg1"></input>
+        <label for="nnAlg">Nearest Neighbour</label>
+        <br>
+        <input type="radio" id="dennAlg" value="dennAlg" name="alg1"></input>
+        <label for="dennAlg">Double-Ended Nearest Neighbour</label>
+      </div>
+      <div id="alg2">
+        <input type=radio id=neighbourSwap value="neighbourSwap" name="alg2" checked></input>
+        <label for="neighbourSwap">Neighbour Swapping</label>
+      </div>
+    </fieldset>
+    <span><i>To add new algorithms, do x,y,z</i></span>
+    <br>
+    <br>
+    <input type="button" id="runAlgs" value="Run Algorithms"></input>
+    <br>
+    <br>
+    <fieldset>
+      <legend>Results:</legend>
+      <div id=progressSection style="display: none;">
+        <progress id=progBar max=100 value=0></progress>
+        <label id=progLab><i>n</i> = <span id=progVal>??</span></label>
+      </div>
+      <input type=button id=exportResults value="Download results as .csv" style="display: none;"></input><br>
+      <div id=resultSection></div>
+    </fieldset>
+  </div>
+</body>
+
+<script src=src.js></script>
