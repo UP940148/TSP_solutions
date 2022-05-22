@@ -12,7 +12,7 @@ summary:hover {
   cursor: pointer;
 }
 summary {
-  width: 6.5rem;
+  width: 8rem;
 }
 details > details {
   border-left: 1px solid black;
